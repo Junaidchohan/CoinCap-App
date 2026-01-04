@@ -11,6 +11,16 @@ class HTTPService {
   HTTPService() {
     _appConfig = GetIt.instance.get<AppConfig>();
     _base_url = _appConfig!.COIN_API_BASE_URL;
-    print(_base_url);
+  }
+
+  Future<Response?> _get(String _path) async {
+    try {
+      String _url = '$_base_url$_path';
+      Response response = await dio.get(_url);
+      return response;
+    } catch (e) {
+      print("HTTPService: Error in GET request");
+      print(e);
+    }
   }
 }
