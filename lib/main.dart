@@ -21,8 +21,9 @@ Future<void> _loadConfig() async {
     AppConfig(COIN_API_BASE_URL: _configData["COIN_API_BASE_URL"]),
   );
 }
+
 void registerHTTPService() {
-  GetIt.instance.registerSingleton<HTTPService>(HTTPService());
+  GetIt.instance.registerSingleton<HTTService>(HTTService());
 }
 
 class MyApp extends StatelessWidget {

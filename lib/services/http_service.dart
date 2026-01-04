@@ -2,13 +2,13 @@ import 'package:coincap_app/models/app_config.dart';
 import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
 
-class HttpService {
+class HTTPService {
   final Dio dio = Dio();
 
   AppConfig? _appConfig;
   String? _base_url;
 
-  HttpService() {
+  HTTPService() {
     _appConfig = GetIt.instance.get<AppConfig>();
     _base_url = _appConfig!.COIN_API_BASE_URL;
     print(_base_url);
