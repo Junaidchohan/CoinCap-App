@@ -17,22 +17,26 @@ This project demonstrates clean architecture, API integration, dependency inject
 ### Exchange Rates
 ![Exchange Rates](screenshots/exchange_rates.jpg)
 
-🚀 Features
-Live cryptocurrency data from CoinGecko API
-Dropdown to switch between multiple coins
-Current USD price and 24h percentage change
-Coin image and detailed description
-Double tap to view exchange rates in multiple currencies
-Clean UI with responsive layout
-Dependency injection using GetIt
-HTTP networking using Dio
+## 🚀 Features
 
-🛠️ Tech Stack
-Flutter
-Dart
-Dio for HTTP requests
-GetIt for dependency injection
-CoinGecko public API
+- Live cryptocurrency data from CoinGecko API
+- Dropdown to switch between multiple coins
+- Current USD price and 24h percentage change
+- Coin image and detailed description
+- Double tap to view exchange rates in multiple currencies
+- Clean UI with responsive layout
+- Dependency injection using GetIt
+- HTTP networking using Dio
+
+
+## 🛠️ Tech Stack
+
+- Flutter
+- Dart
+- Dio for HTTP requests
+- GetIt for dependency injection
+- CoinGecko public API
+
 
 ## 📂 Project Structure
 
