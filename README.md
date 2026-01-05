@@ -55,36 +55,46 @@ assets/
      └── main.json
 
 
-⚙️ Setup Instructions
-Clone the repository
-git clone https://github.com/your-username/coincap_app.git
+## ⚙️ Setup Instructions
+
+### Clone the repository
+```bash
+git clone https://github.com/Junaidchohan/CoinCap-App.git
 Install dependencies
 flutter pub get
 
 Create API config file
+
+Create the file at:
+
 assets/config/main.json
+
+
+Add the following content:
+
 {
   "COIN_API_BASE_URL": "https://api.coingecko.com/api/v3"
 }
 
-
 Run the app
 flutter run
 
-📸 Screenshots
-Home Screen
-Coin Details Screen
 
-📌 Notes
-Internet permission is required for Android
-Uses public CoinGecko API so rate limits apply
-Best viewed on Android emulator or real device
+## 📌 Notes
 
-📜 License
+- Internet permission is required for Android
+- Uses public CoinGecko API so rate limits apply
+- Best viewed on Android emulator or real device
+
+## 📜 License
+
 This project is open source and free to use for learning purposes.
 
-👤 Author
-Muhammad Junaid
-Flutter Developer | Software Engineering Student
+
+## 👤 Author
+
+**Muhammad Junaid**  
+Flutter Developer | Software Engineering Student  
 Think beyond boundaries 🚀
+
 
