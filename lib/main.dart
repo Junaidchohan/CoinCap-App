@@ -1,29 +1,29 @@
 import 'dart:convert';
+
 import 'package:coincap_app/Pages/home_page.dart';
 import 'package:coincap_app/models/app_config.dart';
+import 'package:coincap_app/services/http_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get_it/get_it.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await _loadConfig();
+  await loadConfig();
   registerHTTPService();
   runApp(const MyApp());
 }
 
-Future<void> _loadConfig() async {
-  String _configContent = await rootBundle.loadString(
-    "assets/config/main.json",
-  );
-  Map _configData = jsonDecode(_configContent);
+Future<void> loadConfig() async {
+  String configContent = await rootBundle.loadString("assets/config/main.json");
+  Map configData = jsonDecode(configContent);
   GetIt.instance.registerSingleton<AppConfig>(
-    AppConfig(COIN_API_BASE_URL: _configData["COIN_API_BASE_URL"]),
+    AppConfig(COIN_API_BASE_URL: configData["COIN_API_BASE_URL"]),
   );
 }
 
 void registerHTTPService() {
-  GetIt.instance.registerSingleton<HTTService>(HTTService());
+  GetIt.instance.registerSingleton<HTTPService>(HTTPService());
 }
 
 class MyApp extends StatelessWidget {
@@ -35,9 +35,9 @@ class MyApp extends StatelessWidget {
       title: 'CoinCap',
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        scaffoldBackgroundColor: Color.fromRGBO(25, 58, 206, 1),
+        scaffoldBackgroundColor: const Color.fromRGBO(88, 60, 197, 1.0),
       ),
-      home: const HomePage(title: 'Flutter Demo Home Page'),
+      home: HomePage(),
     );
   }
 }
