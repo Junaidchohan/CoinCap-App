@@ -5,6 +5,19 @@ The app allows users to view real time crypto prices, 24h percentage changes, co
 
 This project demonstrates clean architecture, API integration, dependency injection using GetIt, and async UI handling with FutureBuilder.
 
+
+
+## 📸 Screenshots
+
+### Home Screen
+![Home Screen](screenshots/home_screen.jpg)
+
+### Coin Details
+![Coin Details](screenshots/coin_details.jpg)
+
+### Exchange Rates
+![Exchange Rates](screenshots/exchange_rates.jpg)
+
 🚀 Features
 
 Live cryptocurrency data from CoinGecko API
@@ -96,13 +109,3 @@ Muhammad Junaid
 Flutter Developer | Software Engineering Student
 Think beyond boundaries 🚀
 
-## 📸 Screenshots
-
-### Home Screen
-![Home Screen](screenshots/home_screen.jpg)
-
-### Coin Details
-![Coin Details](screenshots/coin_details.jpg)
-
-### Exchange Rates
-![Exchange Rates](screenshots/exchange_rates.jpg)
